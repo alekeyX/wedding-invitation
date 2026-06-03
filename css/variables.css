@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'hoshiko-satsuki';
+    src: url('../assets/fonts/Hoshiko-Satsuki.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    /* Permite que el texto sea legible mientras carga la fuente */
+}
+
+@font-face {
+    font-family: 'oriental-chicken';
+    src: url('../assets/fonts/oriental-chicken.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    /* Permite que el texto sea legible mientras carga la fuente */
+}
+
+@font-face {
+    font-family: 'spell-of-asia';
+    src: url('../assets/fonts/spell-of-asia.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    /* Permite que el texto sea legible mientras carga la fuente */
+}
+@font-face {
+    font-family: 'korean';
+    src: url('../assets/fonts/korean.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    /* Permite que el texto sea legible mientras carga la fuente */
+}
+@font-face {
+    font-family: 'bankai';
+    src: url('../assets/fonts/bankai.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    /* Permite que el texto sea legible mientras carga la fuente */
+}
+
+:root {
+    /* Color Palette */
+    --bg-color: #fcfbf7;
+    --primary-color: #ee0601;
+    --secondary-color: #720200;
+    /* --dark-color: #1a1a1a;       */
+    --dark-color: #000000;
+    --text-muted: #555555;
+    --white: #ffffff;
+
+    /* Typography */
+    --font-japanese: 'hoshiko-satsuki', sans-serif;
+    --font-oriental-chicken: 'oriental-chicken', sans-serif;
+    --font-spell-of-asia: 'spell-of-asia', sans-serif;
+    --font-korean: 'korean', sans-serif;
+    --font-bankai: 'bankai', sans-serif;
+    --font-title: 'Cinzel', serif;
+    --font-body: "Roboto", sans-serif;
+    --primary-size: 25px;
+    --secondary-size: 20px;
+    --third-size: 14px;
+
+    /* Layout Tokens */
+    --max-width: 800px;
+    --transition-smooth: opacity 0.8s ease-out, transform 0.8s ease-out;
+}

@@ -1,0 +1,109 @@
+.git-divider {
+    background-color: var(--primary-color);
+    height: 180px;
+    position: relative;
+}
+
+.git-divider-image {
+    height: 100%;
+}
+
+.git-divider-image img {
+    height: 90%;
+    margin: auto;
+}
+
+.git-divider-image-globo-1 img {
+    height: 100%;
+    position: absolute;
+    bottom: -100%;
+    right: 8%;
+}
+
+.git-divider-image-globo-2 img {
+    height: 100%;
+    position: absolute;
+    bottom: -100%;
+    right: 20%;
+}
+
+.shugi-fukuro-section {
+    padding: 70px 30px;
+}
+
+.gift-image {
+    width: 100%;
+    margin: auto;
+}
+
+.gift-image img {
+    width: 10%;
+}
+
+.bank-info-slot {
+    margin-top: 25px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    background: #fafafa;
+    padding: 10px;
+    max-width: 400px;
+    margin: 25px auto 0 auto;
+}
+
+.bank-info-slot img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.message-child {
+    background-color: var(--dark-color);
+    height: 180px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10% 30%;
+}
+
+.message-child-message {
+    color: #fafafa;
+    font-size: 20px;
+}
+
+.meesage-child-img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10%;
+}
+
+@media (min-width: 769px) {
+    .git-divider {
+        height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .git-divider {
+        height: 300px;
+    }
+
+    .message-child {
+        padding: 10px 20%;
+    }
+
+    .message-child-message {
+        font-size: 16px;
+    }
+
+    .meesage-child-img {
+        left: 3%;
+    }
+
+    .git-divider-image-globo-1 img, 
+    .git-divider-image-globo-2 img {
+        height: 50%;
+        bottom: -50%;
+    }
+}

@@ -1,0 +1,38 @@
+.dress-code-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 150px 30px;
+    position: relative;
+}
+
+.dress-code-title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.dress-code-desc {
+    font-size: 25px;
+    max-width: 500px;
+}
+
+.dress-code-desc span {
+    font-weight: bold;
+}
+
+.dress-code-image {
+    position: absolute;
+    width: 25%;
+    left: 4%;
+}
+
+.dress-code-image-img {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .dress-code-image {
+        left: 0%;
+    }
+}

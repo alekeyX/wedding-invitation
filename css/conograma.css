@@ -1,0 +1,69 @@
+.timeline-section {
+    position: relative;
+}
+
+.timeline-item {
+    width: auto;
+}
+
+.timeline-right {
+    margin-left: auto;
+    width: 30%;
+}
+
+.timeline-left {
+    width: 30%;
+}
+
+.timeline-time {
+    font-weight: bold;
+    color: var(--primary-color);
+    font-size: 16px;
+}
+
+.timeline-title {
+    font-weight: bold;
+}
+
+.timeline-desc {
+    font-size: 13px;
+}
+
+.time-line-img {
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.time-line-img-img {
+    height: 900px;
+}
+
+.maps-link {}
+
+.maps-link {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.maps-link:hover {
+    color: #003366;
+    text-decoration: none;
+}
+
+.maps-link:visited {
+    color: #690000;
+}
+
+.timeline-img {
+    width: 50px;
+}
+
+@media (max-width: 768px) {
+    .time-line-img-img {
+        height: 700px;
+    }
+}
