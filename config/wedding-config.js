@@ -1,4 +1,8 @@
-const rawWhatsappMessage = `¡Hola! Reportándome para el evento del año ⛩️. Confirmo al 100% mi asistencia a la boda de Alejandro y Stephany. Prometo comer delicioso 🥢, brindar por ustedes 🥂 y darlo todo en la fiesta. ¡Misión aceptada! 🫡✨`;
+const rawWhatsappMessage = `¡Hola! Reportándome para el evento del año ⛩️. 
+Confirmo al 100% mi asistencia a la boda de Alejandro y Stephany. 
+Prometo comer delicioso 🥢, brindar por ustedes 🥂 y darlo todo en la fiesta.
+¡Misión aceptada! 🫡✨
+Atte:...`;
 const phone = "59170369689";
 const whatsappParams = new URLSearchParams({
     phone: phone,
@@ -12,10 +16,10 @@ export const WEDDING_CONFIG = {
     whatsappRSVP: `https://api.whatsapp.com/send/?phone=${whatsappParams.toString()}`,
     romanticPhrase: "«A veces el amor es una batalla, pero vale la pena luchar por él».",
     timeline: [
-        { time: "15:00", title: "Ceremonia", desc: "Parroquia San Pedro (Av. Heroínas)", link: "https://maps.app.goo.gl/rPCuNE2q89KykCSD8?g_st=aw" ,
+        { time: "15:00", title: "Ceremonia", desc: "Parroquia San Pedro <br>(Av. Heroínas)", link: "https://maps.app.goo.gl/rPCuNE2q89KykCSD8?g_st=aw" ,
             img: "iglesia.svg"
         },
-        { time: "16:30", title: "Recepción", desc: "Salón de Eventos Senda Verde (Av. Linde)", link: "https://maps.app.goo.gl/R3Eab8kHsT22u2nw9?g_st=aw" ,
+        { time: "16:30", title: "Recepción", desc: "Senda Verde <br> Salón de Eventos  <br> (Av. Linde)", link: "https://maps.app.goo.gl/R3Eab8kHsT22u2nw9?g_st=aw" ,
             img: "recepcion.svg"
         },
         { time: "18:00", title: "Acto Principal", desc: "Brindis de honor y protocolo",

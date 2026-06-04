@@ -239,7 +239,52 @@
     top: 20px;
     right: 20px;
     z-index: 1000;
-    opacity: 0.5;
+    opacity: 1;
+}
+
+.music-tooltip {
+    position: absolute;
+    right: 60px; /* Lo posiciona a la izquierda del botón redondo */
+    top: -12px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    font-family: var(--font-japanese-elegant);
+    font-size: 0.85rem;
+    padding: 8px 10px;
+    border-radius: 20px;
+    /* white-space: nowrap; */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    pointer-events: none; 
+    width: 210px;
+    
+    /* Animaciones y Transiciones */
+    opacity: 0;
+    transform: translateX(10px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    animation: floatTooltip 2s ease-in-out infinite;
+}
+
+.music-tooltip::after {
+    content: "";
+    position: absolute;
+    right: -6px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-width: 6px 0 6px 6px;
+    border-style: solid;
+    border-color: transparent transparent transparent var(--primary-color);
+}
+
+/* Estado activo controlado por JS */
+.music-tooltip.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Animación de flotación Zen para llamar la atención en móviles */
+@keyframes floatTooltip {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(-6px); }
 }
 
 .audio-player button {
@@ -276,6 +321,7 @@
     position: absolute;
     bottom: 0;
     left: 0;
+    max-width: 100%;
     opacity: 0.7;
     z-index: -1;
 }
@@ -283,6 +329,7 @@
 .footer-jpn-2 {
     position: absolute;
     bottom: 0;
+    max-width: 100%;
     right: 0;
     opacity: 0.7;
     z-index: -1;

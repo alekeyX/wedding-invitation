@@ -11,7 +11,6 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("romantic-phrase").innerText = WEDDING_CONFIG.romanticPhrase;
     document.getElementById("rsvp-btn").href = WEDDING_CONFIG.whatsappRSVP;
 
-    // 2. Renderizado Reactivo del Cronograma
     const timelineLayout = document.getElementById("timeline-layout");
     if(timelineLayout) {
         WEDDING_CONFIG.timeline.forEach((item, index) => {
@@ -24,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <div class="timeline-time">${item.time}</div>
                 <div class="timeline-title">${item.title}</div>
                 <div class="timeline-desc">${item.desc}</div>
-                ${item.link ? `<a class="maps-link" href="${item.link}" target="_blank">Ver ubicación</a>` : ""}
+                ${item.link ? `<a class="map-btn maps-link" href="${item.link}" target="_blank">Ver ubicación</a>` : ""}
             `;
             timelineLayout.appendChild(itemDiv);
         });

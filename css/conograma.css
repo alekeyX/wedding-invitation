@@ -40,22 +40,28 @@
     height: 900px;
 }
 
-.maps-link {}
+.map-btn {
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+}
 
 .maps-link {
     color: var(--secondary-color);
     text-decoration: none;
     font-weight: bold;
+    color: #fafafa;
     transition: all 0.3s ease;
 }
 
 .maps-link:hover {
-    color: #003366;
+    color: #bdbdbd;
     text-decoration: none;
 }
 
 .maps-link:visited {
-    color: #690000;
+    color: #f8eacc;
 }
 
 .timeline-img {

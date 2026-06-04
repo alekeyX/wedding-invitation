@@ -3,7 +3,7 @@ export function initSakura() {
     if (!container) return;
     
     const isMobile = window.innerWidth < 768;
-    const petalCount = isMobile ? 15 : 32; 
+    const petalCount = isMobile ? 25 : 62; 
 
     for (let i = 0; i < petalCount; i++) {
         const petal = document.createElement('div');
