@@ -32,12 +32,15 @@
 
         <div class="audio-player">
             <button id="musicBtn" aria-label="Reproducir música">🎵</button>
-            <audio id="bgMusic" loop src="tu-musica.mp3"></audio>
+            <audio id="bgMusic" loop src="assets/music/your-name-sparkle.mp3" autoplay></audio>
         </div>
 
         <header class="hero-section">
             <div class="header-cerezo">
                 <img class="header-cerezo-img" src="assets/images/cerezo-1.svg" alt="">
+            </div>
+            <div class="header-cerezo-2">
+                <img class="header-cerezo-img-2" src="assets/images/three-2.svg" alt="">
             </div>
 
             <img class="header-mountain-img" src="assets/images/mountain.svg" alt="">
@@ -53,7 +56,6 @@
                 <h1 class="header-names-txt" id="couple-bride">Novia...</h1>
             </div>
 
-            <p class="subtitle">Nuestra Unión</p>
             <hr>
             <div class="romantic-phrase-container">
                 <p id="romantic-phrase"></p>
@@ -66,14 +68,14 @@
 
         <section class="photos-section fade-in-scroll">
             <div class="photo-frame">
-                <img class="photo-frame-img" src="assets/fotos/foto-uyuni.png" alt="Alejandro y Stephany Foto 1">
+                <img class="photo-frame-img" src="assets/photos/foto-uyuni.png" alt="Alejandro y Stephany Foto 1">
             </div>
         </section>
 
 
         <section class="countdown-section fade-in-scroll">
 
-            <img class="countdown-pescado-img" src="assets/fotos/img-pescado.png" alt="">
+            <img class="countdown-pescado-img" src="assets/photos/img-pescado.png" alt="">
 
             <h2>Cuenta Regresiva</h2>
             <div id="countdown">
@@ -86,22 +88,21 @@
                 <div><span id="minutes">00</span>
                     <p>Min</p>
                 </div>
-                <div><span id="seconds">00</span>
+                <!-- <div><span id="seconds">00</span>
                     <p>Seg</p>
-                </div>
+                </div> -->
             </div>
         </section>
 
         <section class="section-photos">
-
             <div class="section-photos-photo-2">
-                <img class="photo-frame" src="assets/fotos/fondo-rasengan.jpeg" alt="Alejandro y Stephany Foto 2">
+                <img class="photo-frame" src="assets/photos/fondo-rasengan.jpeg" alt="Alejandro y Stephany Foto 2">
             </div>
             <div class="section-photos-photo-3">
-                <img class="photo-frame" src="assets/fotos/fondo-pubg.jpeg" alt="Alejandro y Stephany Foto 2">
+                <img class="photo-frame" src="assets/photos/fondo-pubg.jpeg" alt="Alejandro y Stephany Foto 2">
             </div>
             <div class="section-photos-photo-1">
-                <img class="photo-frame" src="assets/fotos/fondo-salar.png" alt="Alejandro y Stephany Foto 2">
+                <img class="photo-frame" src="assets/photos/fondo-salar.png" alt="Alejandro y Stephany Foto 2">
             </div>
         </section>
 
@@ -112,7 +113,7 @@
             </div>
 
             <div class="time-line-img">
-                <img class="time-line-img-img" src="assets/images/linea-1.svg" alt="">
+                <img class="time-line-img-img" src="assets/images/linea-2.svg" alt="">
             </div>
         </section>
 
@@ -131,7 +132,7 @@
 
         <div class="git-divider">
             <div class="git-divider-image">
-                <img src="assets/fotos/dream-kanji.png" alt="">
+                <img src="assets/photos/dream-kanji.png" alt="">
             </div>
 
             <div class="git-divider-image-globo-1">
@@ -149,13 +150,18 @@
                 </div>
 
                 <h2>Presente de Bodas</h2>
-                <p class="desc-text">Tu presencia es nuestro mejor regalo. Sin embargo, si deseas apoyarnos a
-                    cumplir
-                    nuestro gran sueño, agradeceríamos que tu detalle sea en dinero en efectivo o transferencia
-                    bancaria, ya que contamos con todo lo necesario para nuestro hogar.</p>
+                <p>
+                    Contamos con todo lo necesario para nuestro hogar, y tu presencia tambien es nuestro regalo.
+                </p>
+                
+                <br>
+                
+                <p class="desc-text">Soñamos con aventuras y nuevas historias. Si deseas ayudarnos, tu aporte nos
+                    acercará a nuestro próximo gran viaje.
+                </p>
 
                 <div class="bank-info-slot">
-                    <img src="assets/fotos/qr-bank.jpeg" alt="Información de cuenta bancaria">
+                    <img src="assets/photos/qr-bank.jpeg" alt="Información de cuenta bancaria">
                 </div>
             </div>
         </section>
@@ -169,11 +175,15 @@
                 también necesitan un día libre. Por favor no niños"</p>
         </div>
 
-        <footer class="fade-in-scroll" style="padding: 60px 20px 100px 20px;">
+        <footer class="footer-container fade-in-scroll">
             <h2>Confirmación de Asistencia</h2>
-            <p style="margin-bottom: 30px; color: var(--text-muted);">Por favor, confírmanos tu asistencia antes del
+            <p style="margin-bottom: 30px; color: var(--text-muted); font-weight: bold;">Por favor, confírmanos tu
+                asistencia antes del
                 evento.</p>
             <a id="rsvp-btn" href="#" target="_blank" class="btn-primary">Confirmar por WhatsApp</a>
+
+            <img class="footer-jpn-1" src="assets/images/jpn-1.png" alt="">
+            <img class="footer-jpn-2" src="assets/images/jpn-2.png" alt="">
         </footer>
         </section>
 

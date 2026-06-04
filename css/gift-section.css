@@ -14,17 +14,17 @@
 }
 
 .git-divider-image-globo-1 img {
-    height: 100%;
+    height: 70%;
     position: absolute;
-    bottom: -100%;
-    right: 8%;
+    bottom: -70%;
+    right: 3%;
 }
 
 .git-divider-image-globo-2 img {
-    height: 100%;
+    height: 70%;
     position: absolute;
-    bottom: -100%;
-    right: 20%;
+    bottom: -70%;
+    right: 15%;
 }
 
 .shugi-fukuro-section {
@@ -78,10 +78,15 @@
     left: 10%;
 }
 
+.meesage-child-img img {
+    height: 100px;
+}
+
 @media (min-width: 769px) {
     .git-divider {
         height: 300px;
     }
+
 }
 
 @media (max-width: 768px) {
@@ -101,9 +106,20 @@
         left: 3%;
     }
 
-    .git-divider-image-globo-1 img, 
+    .meesage-child-img img {
+        height: 55px;
+    }
+
+    .git-divider-image-globo-1 img,
     .git-divider-image-globo-2 img {
         height: 50%;
         bottom: -50%;
     }
+}
+
+@media (max-width: 425px) {
+.git-divider-image-globo-2 img {
+
+    right: 80%;
+}
 }

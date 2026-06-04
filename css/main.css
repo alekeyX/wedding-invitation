@@ -21,7 +21,9 @@ section {
     margin: 0 auto;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: var(--font-japanese);
     color: var(--primary-color);
     letter-spacing: 2px;
@@ -45,7 +47,10 @@ h2 {
 }
 
 @media (max-width: 768px) {
-    section { padding: 40px 15px; }
+    section {
+        box-sizing: border-box;
+        padding: 40px 15px;
+    }
 }
 
 @media (prefers-reduced-motion: reduce) {

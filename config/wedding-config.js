@@ -1,9 +1,16 @@
+const rawWhatsappMessage = `¡Hola! Reportándome para el evento del año ⛩️. Confirmo al 100% mi asistencia a la boda de Alejandro y Stephany. Prometo comer delicioso 🥢, brindar por ustedes 🥂 y darlo todo en la fiesta. ¡Misión aceptada! 🫡✨`;
+const phone = "59170369689";
+const whatsappParams = new URLSearchParams({
+    phone: phone,
+    text: rawWhatsappMessage
+});
+
 export const WEDDING_CONFIG = {
     groom: "Alejandro",
     bride: "Stephany",
     date: "2026-08-08T15:00:00", 
-    whatsappRSVP: "https://wa.me/59160781888?text=¡Hola!+Confirmo+mi+asistencia+a+la+boda+de+Alejandro+y+Stephany.+¡Ahí+nos+vemos!",
-    romanticPhrase: "«Aveces el amor es una batalla, pero vale la pena luchar por él».",
+    whatsappRSVP: `https://api.whatsapp.com/send/?phone=${whatsappParams.toString()}`,
+    romanticPhrase: "«A veces el amor es una batalla, pero vale la pena luchar por él».",
     timeline: [
         { time: "15:00", title: "Ceremonia", desc: "Parroquia San Pedro (Av. Heroínas)", link: "https://maps.app.goo.gl/rPCuNE2q89KykCSD8?g_st=aw" ,
             img: "iglesia.svg"
@@ -18,7 +25,7 @@ export const WEDDING_CONFIG = {
              img: "cena.svg"
          },
         { time: "19:30", title: "Fiesta", desc: "¡A bailar! (No olvides tu calzado cómodo)",
-             img: "baile.svg"
+             img: "dance.svg"
          },
         { time: "01:30", title: "Despedida", desc: "Fin del evento",
              img: "bye.svg"

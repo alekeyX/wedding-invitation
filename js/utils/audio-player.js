@@ -9,10 +9,10 @@ export function initAudioPlayer() {
             audio.play().catch(() => {
                 console.warn("Audio bloqueado: El usuario debe interactuar primero.");
             });
-            musicBtn.innerText = "⏸️";
+            musicBtn.innerText = "🎵";
         } else {
             audio.pause();
-            musicBtn.innerText = "🎵";
+            musicBtn.innerText = "||";
         }
     });
 }
