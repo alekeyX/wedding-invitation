@@ -4,15 +4,29 @@ export function initAudioPlayer() {
     
     if (!musicBtn || !audio) return;
 
-    musicBtn.addEventListener("click", () => {
-        if (audio.paused) {
-            audio.play().catch(() => {
-                console.warn("Audio bloqueado: El usuario debe interactuar primero.");
+    const startAudioOnInteraction = () => {
+        audio.play()
+            .then(() => {
+                musicBtn.innerText = "⏸️";
+                document.removeEventListener("click", startAudioOnInteraction);
+                document.removeEventListener("touchstart", startAudioOnInteraction);
+            })
+            .catch((error) => {
+                console.log("El navegador sigue bloqueando el audio hasta una interacción más directa.", error);
             });
-            musicBtn.innerText = "🎵";
+    };
+
+    document.addEventListener("click", startAudioOnInteraction);
+    document.addEventListener("touchstart", startAudioOnInteraction); 
+
+    musicBtn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        if (audio.paused) {
+            audio.play();
+            musicBtn.innerText = "⏸️";
         } else {
             audio.pause();
-            musicBtn.innerText = "||";
+            musicBtn.innerText = "🎵";
         }
     });
 }
