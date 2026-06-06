@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("rsvp-btn").href = WEDDING_CONFIG.whatsappRSVP;
 
     const timelineLayout = document.getElementById("timeline-layout");
-    if(timelineLayout) {
+    if (timelineLayout) {
         WEDDING_CONFIG.timeline.forEach((item, index) => {
             const itemDiv = document.createElement("div");
             itemDiv.className = "timeline-item";
@@ -34,4 +34,16 @@ document.addEventListener("DOMContentLoaded", () => {
     initSakura();
     initScrollAnimations();
     initAudioPlayer();
+
+    // Inyección dinámica de la sección de Regalos / Banco
+    const bankImgElement = document.getElementById("bank-qr-img");
+    const downloadBtnElement = document.getElementById("download-bank-btn");
+
+    if (bankImgElement && downloadBtnElement) {
+        // Asignamos la imagen al elemento <img>
+        bankImgElement.src = WEDDING_CONFIG.giftSection.bankImage;
+
+        // Asignamos la misma imagen al enlace de descarga
+        downloadBtnElement.href = WEDDING_CONFIG.giftSection.bankImage;
+    }
 });

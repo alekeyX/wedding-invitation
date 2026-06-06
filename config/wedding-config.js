@@ -34,5 +34,10 @@ export const WEDDING_CONFIG = {
         { time: "01:30", title: "Despedida", desc: "Fin del evento",
              img: "bye.svg"
          }
-    ]
+    ],
+    giftSection: {
+        title: "✉️ Presente de Bodas (Shugi-fukuro)",
+        message: "Tu presencia es nuestro mejor regalo...",
+        bankImage: "assets/photos/qr-bank.jpeg"
+    }
 };
