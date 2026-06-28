@@ -13,7 +13,7 @@ export const WEDDING_CONFIG = {
     groom: "Alejandro",
     bride: "Stephany",
     date: "2026-08-08T15:00:00", 
-    whatsappRSVP: `https://api.whatsapp.com/send?phone=${whatsappParams.toString()}`,
+    whatsappRSVP: `https://api.whatsapp.com/send?${whatsappParams.toString()}`,
     romanticPhrase: "«A veces el amor es una batalla, pero vale la pena luchar por él».",
     timeline: [
         { time: "15:00", title: "Ceremonia", desc: "Parroquia San Pedro <br>(Av. Heroínas)", link: "https://maps.app.goo.gl/rPCuNE2q89KykCSD8?g_st=aw" ,
